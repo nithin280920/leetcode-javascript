@@ -1,4 +1,4 @@
-var majorityElement = function(nums) {
+const majorityElement = (nums) => {
     let count = 0;
     let candidate = null;
 
