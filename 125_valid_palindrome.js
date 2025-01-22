@@ -10,3 +10,7 @@ const isPalindrome = (s) => {
     // return s === s.split('').reverse().join('');
     
 };
+
+
+// console.log(isPalindrome("nitin"));
+console.log(isPalindrome("A man, a plan, a canal: Panama"));
