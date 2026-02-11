@@ -29,19 +29,20 @@ const rotate = (nums, k) => {
   const result = new Array(n);
 
   for (let i = 0; i < n; i++) {
-    result[(i + k) % n] = nums[i];
+    result[(i + k) % n] = nums[i];    
   }
 
-  for (let i = 0; i < n; i++) {
-    nums[i] = result[i];
-  }
+  return result;
+  // for (let i = 0; i < n; i++) {
+  //   nums[i] = result[i];
+  // }
 };
 
 // Example usage:
 let nums1 = [1, 2, 3, 4, 5, 6, 7];
-rotate(nums1, 1);
-console.log(nums1);
+// rotate(nums1, 3);
+console.log(rotate(nums1, 1));
 
 // let nums2 = [-1, -100, 3, 99];
-// rotate(nums2, 2);
+// // rotate(nums2, 2);
 // console.log(nums2);
